@@ -1,0 +1,13 @@
+<h1>WELCOME to count page</h1>
+<h1>The full text</h1>
+{{ fulltext}}
+<br>
+<a href="{% url 'home' %}">start again</a>]
+<a href="{% url 'about' %}">abuot me</a>
+<br>
+<h1>there are totally {{ count }} words in the sentence</h1>
+<h1>the total occurance</h1>
+{%  for words,counter in occurance%}
+    <br>
+    {{ words }} - {{ counter }}
+{%  endfor  %}
